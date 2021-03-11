@@ -123,7 +123,7 @@ def set_selenium_local_session(
     if proxy_username and proxy_password:
         proxy_authentication(browser, logger, proxy_username, proxy_password)
 
-    browser.implicitly_wait(page_delay)
+    browser.implicitly_wait(25)
 
     # Apple iPhone X:      375, 812
     # Apple iPhone XS Max: 414, 896
